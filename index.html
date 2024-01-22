@@ -1,50 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Hockey’s</title>
     <!-- goole manrope font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- daisy ui and tailwind link  -->
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- daisy ui and tailwind link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 
-<!-- css style  -->
-<style>
-   .font-manrope{
-    font-family: 'Manrope', sans-serif;
-   }
-</style>
+    <!-- css style  -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
+
 <body class="font-manrope">
 
-    <header class="container mx-auto">
+    <header class="container mx-auto my-24">
 
-
+        <!-- banner section  -->
+        <div>
+            <div class="carousel  w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-<main class="container mx-auto">
-    
 
-</main>
-    
-<footer>
+    <main class="container mx-auto">
+
+        <!-- Professional Hockeys Club  -->
+        <section class=" text-center  ">
+            <h2 class="text-5xl font-extrabold pb-10">Professional Hockeys Club</h2>
+            <p class="text-gray-500">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+
+            <div class="pt-6 gap-8 grid grid-cols-1 lg:grid-cols-4">
+                <!-- fast card  -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- 2nd card  -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- 3th card  -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- 4th card  -->
+                <div class="card  bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Program Sections  -->
+        <section class="text-center my-20">
+            <h2 class="text-5xl font-extrabold pb-10">Program Sections</h2>
+            <p class="text-gray-500 mb-10">Dit amet consectetur. Condimentum dignissim
+                adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+
+            <!-- program image  -->
+            <div class=" gap-8 grid grid-cols-1 lg:grid-cols-2 grid-rows-2">
+                <!-- 1st image  -->
+                <div class="hero rounded-2xl  " style="background-image:url(./Images/2.png);">
+                    <div class="hero-overlay "></div>
+                    <div class="hero-content text-left">
+                        <div class="max-w-md">
+                            <h1 class="mb-2 mt-5 text-3xl font-semibold text-white">Junior Program</h1>
+                            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                                assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id
+                                nisi.</p>
+                            <button class="btn text-white bg-red-400">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd image  -->
+                <div class="hero rounded-2xl " style="background-image:url(./Images/3.png);">
+                    <div class="hero-overlay "></div>
+                    <div class="hero-content text-left">
+                        <div class="max-w-md">
+                            <h1 class="mb-2 mt-5 text-3xl font-semibold text-white">Junior Program</h1>
+                            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                                assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id
+                                nisi.</p>
+                            <button class="btn text-white bg-red-400">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd image  -->
+                <div class="hero rounded-2xl lg:col-span-2 w-full" style="background-image:url(./Images/4.png);">
+                    <div class="hero-overlay "></div>
+                    <div class="hero-content text-start">
+                        <div class="max-w-md">
+                            <h1 class="mb-2 mt-5 text-3xl font-semibold text-white">Junior Program</h1>
+                            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                                assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id
+                                nisi.</p>
+                            <button class="btn text-white bg-red-400">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
 
 
-</footer>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
 </body>
+
 </html>
