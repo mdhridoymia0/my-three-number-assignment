@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey’s</title>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/c33e794350.js" crossorigin="anonymous"></script>
     <!-- goole manrope font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +38,52 @@
 
 <body class="font-manrope">
 
-    <header class="container mx-auto my-24">
+    <!-- header section  -->
+    <header class="container my-24  mx-auto lg:max-w-[1200px]">
+
+        <nav class="border-t border-b border-dashed border-gray-400 py-5 mb-4">
+            <div class="navbar bg-base-100 p-0">
+
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+
+                <!-- large device -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-6">
+                    <i class="fa-solid lg:block hidden fa-magnifying-glass"></i>
+                    <button
+                        class="px-[17px] py-[8px] lg:px-[24px] text-lg lg:text-xl lg:py-[15px] rounded-lg font-bold bg-[#FF4240] text-[#fff]">Get
+                        Ticket</button>
+                </div>
+            </div>
+        </nav>
 
         <!-- banner section  -->
         <div>
@@ -59,13 +106,16 @@
         </div>
     </header>
 
-    <main class="container mx-auto">
+    <main class="container mx-auto lg:max-w-[1200px]">
 
         <!-- Professional Hockeys Club  -->
-        <section class=" text-center  ">
-            <h2 class="text-5xl font-extrabold pb-10">Professional Hockeys Club</h2>
-            <p class="text-gray-500">Dit amet consectetur. Condimentum dignissim
-                adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+        <section class=" text-center">
+            <div class="border-t border-b border-dashed py-5">
+                <h2 class="text-5xl font-extrabold pb-10">Professional Hockeys Club</h2>
+                <p class="text-gray-500">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis placerat dolor. <br> Purus urna in
+                    sit nullam proin. </p>
+            </div>
 
             <div class="pt-6 gap-8 grid grid-cols-1 lg:grid-cols-4">
                 <!-- fast card  -->
@@ -112,58 +162,435 @@
             </div>
 
         </section>
+
         <!-- Program Sections  -->
-        <section class="text-center my-20">
-            <h2 class="text-5xl font-extrabold pb-10">Program Sections</h2>
-            <p class="text-gray-500 mb-10">Dit amet consectetur. Condimentum dignissim
-                adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
 
-            <!-- program image  -->
-            <div class=" gap-8 grid grid-cols-1 lg:grid-cols-2 grid-rows-2">
-                <!-- 1st image  -->
-                <div class="hero rounded-2xl  " style="background-image:url(./Images/2.png);">
-                    <div class="hero-overlay "></div>
-                    <div class="hero-content text-left">
-                        <div class="max-w-md">
-                            <h1 class="mb-2 mt-5 text-3xl font-semibold text-white">Junior Program</h1>
-                            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                                assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id
-                                nisi.</p>
-                            <button class="btn text-white bg-red-400">Register Now!</button>
-                        </div>
+        <section class="my-24">
+            <div class="text-center py-6 px-[22px] border-t border-b border-dashed">
+                <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Program Sections
+                </h2>
+                <p class="text-[14px] lg:text-base lg:w-[607px] text-[rgba(19,19,24,0.60)] font-medium mx-auto"> A
+                    professional
+                    hockey club typically consists of several program sections, each with a specific function and
+                    responsibility.
+                </p>
+            </div>
+
+            <div class="mt-6 lg:mt-12 flex flex-col gap-6">
+                <!-- card container -->
+                <div class="flex flex-col lg:flex-row gap-6">
+
+                    <!-- card one -->
+                    <div style="background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.50) 0%, rgba(19, 19, 24, 0.50) 100%),  url('./Images/2.png');"
+                        class="text-white bg-cover lg:bg-inherit max-w-[573px] rounded-2xl py-6 pl-6 pr-[34px] lg:pt-[95px] lg:pr-[38px] lg:pb-10 lg:pl-10">
+                        <h3 class="text-xl lg:text-[28px] font-extrabold mb-3 lg:mb-4">Junior Program</h3>
+                        <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">The program offers
+                            coaching, training, and mentoring from experienced and qualified staff, as well as
+                            exposure to competitive and challenging environments.
+                        </p>
+                        <button class="btn bg-[#FF4240] border-0 text-white text-lg lg:text-xl font-bold">Register
+                            Now!</button>
                     </div>
-                </div>
-                <!-- 2nd image  -->
-                <div class="hero rounded-2xl " style="background-image:url(./Images/3.png);">
-                    <div class="hero-overlay "></div>
-                    <div class="hero-content text-left">
-                        <div class="max-w-md">
-                            <h1 class="mb-2 mt-5 text-3xl font-semibold text-white">Junior Program</h1>
-                            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                                assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id
-                                nisi.</p>
-                            <button class="btn text-white bg-red-400">Register Now!</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- 3rd image  -->
-                <div class="hero rounded-2xl lg:col-span-2 w-full" style="background-image:url(./Images/4.png);">
-                    <div class="hero-overlay "></div>
-                    <div class="hero-content text-start">
-                        <div class="max-w-md">
-                            <h1 class="mb-2 mt-5 text-3xl font-semibold text-white">Junior Program</h1>
-                            <p class="mb-5 text-white">Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                                assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id
-                                nisi.</p>
-                            <button class="btn text-white bg-red-400">Register Now!</button>
-                        </div>
+
+                    <!-- card two -->
+                    <div style="background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.50) 0%, rgba(19, 19, 24, 0.50) 100%),  url('./Images/3.png');"
+                        class="text-white bg-cover lg:bg-inherit max-w-[573px] rounded-2xl py-6 pl-6 pr-[34px] lg:pt-[95px] lg:pr-[38px] lg:pb-10 lg:pl-10">
+                        <h3 class="text-xl lg:text-[28px] font-extrabold mb-3 lg:mb-4">Teenager Program</h3>
+                        <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">Teenager Program is a
+                            program that aims to provide young hockey players with the
+                            opportunity to develop their skills and pursue their passion for the sport.
+                        </p>
+                        <button class="btn bg-[#FF4240] border-0 text-white text-lg lg:text-xl font-bold">Register
+                            Now!</button>
                     </div>
                 </div>
 
-
-
+                <!-- third card -->
+                <div style="background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.50) 0%, rgba(19, 19, 24, 0.50) 100%),  url('./Images/4.png');"
+                    class="text-white bg-cover lg:bg-inherit max-w-[1170px] rounded-2xl py-6 pl-6 pr-[34px] lg:pt-[95px] lg:pr-[38px] lg:pb-10 lg:pl-10">
+                    <h3 class="text-xl lg:text-[28px] font-extrabold mb-3 lg:mb-4">Professional Program</h3>
+                    <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">Professional Program is a
+                        new initiative that aims to provide high-quality
+                        training, coaching, and mentoring for aspiring hockey players who want to pursue a career in
+                        the sport.
+                    </p>
+                    <button class="btn bg-[#FF4240] border-0 text-white text-lg lg:text-xl font-bold">Register
+                        Now!</button>
+                </div>
             </div>
         </section>
+
+
+        <!-- new product section  -->
+
+        <section class="my-24">
+            <div>
+                <div class="text-center lg:p-8 py-6 px-[22px] border-t border-b border-dashed">
+                    <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Our New Products
+                    </h2>
+                    <p class="text-[14px] lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
+                        Don't miss this
+                        opportunity to upgrade your hockey bag with the best new hockey gear from Professional Hockey
+                        Club.
+                    </p>
+                </div>
+
+
+                <!-- products container -->
+                <div class="flex flex-col gap-6 mt-12">
+
+                    <!-- first's row -->
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <!-- product one -->
+                        <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
+                            <div>
+                                <img class="w-[287px] lg:w-[180px]" src="Images/5.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[rgba(249,152,8,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-eye text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">20</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-heart text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">200</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="my-3 text-[#131318] text-xl font-extrabold">World Cup Flags Football</h4>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">It is played on a
+                                    rectangular ice rink, with two teams of six players each.</p>
+
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                    <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)]">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product two -->
+                        <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
+                            <div>
+                                <img class="w-[287px] lg:w-[180px]" src="Images/6.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[rgba(249,152,8,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-eye text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">20</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-heart text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">200</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="my-3 text-[#131318] text-xl font-extrabold">World Cup Flags Football</h4>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">It is played on a
+                                    rectangular ice rink, with two teams of six players each.</p>
+
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                    <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)]">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second's row -->
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <!-- product third -->
+                        <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
+                            <div>
+                                <img class="w-[287px] lg:w-[180px]" src="Images/7.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[rgba(249,152,8,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-eye text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">20</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-heart text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">200</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="my-3 text-[#131318] text-xl font-extrabold">Cap For Hockeys</h4>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">A cap is a
+                                    cloth that covers the head and often has a brim or a visor.</p>
+
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                    <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)]">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product four -->
+                        <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
+                            <div>
+                                <img class="w-[287px] lg:w-[180px]" src="Images/8.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[rgba(249,152,8,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-eye text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">20</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-heart text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">200</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="my-3 text-[#131318] text-xl font-extrabold">World Cup Flags Football</h4>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">It is played on a
+                                    rectangular ice rink, with two teams of six players each.</p>
+
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                    <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)]">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third's row -->
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <!-- product five -->
+                        <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
+                            <div>
+                                <img class="w-[287px] lg:w-[180px]" src="Images/9.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[rgba(249,152,8,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-eye text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">20</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-heart text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">200</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="my-3 text-[#131318] text-xl font-extrabold">World Cup Flags Football</h4>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">It is played on a
+                                    rectangular ice rink, with two teams of six players each.</p>
+
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                    <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)]">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product six -->
+                        <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
+                            <div>
+                                <img class="w-[287px] lg:w-[180px]" src="Images/10.png" alt="">
+                            </div>
+                            <div>
+                                <div class="flex gap-4 items-center">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[rgba(249,152,8,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-eye text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">20</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-regular fa-heart text-[rgba(19,19,24,0.50)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)] font-medium">200</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="my-3 text-[#131318] text-xl font-extrabold">World Cup Flags Football</h4>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">It is played on a
+                                    rectangular ice rink, with two teams of six players each.</p>
+
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                    <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center gap-2">
+                                        <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
+                                        <p class="text-[rgba(19,19,24,0.50)]">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Question  -->
+        <section class="my-20">
+            <div class="max-w-[1170px] mx-auto">
+                <div class="text-center lg:p-8 py-6 px-[22px] border-t border-b border-dashed">
+                    <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Our New Products
+                    </h2>
+                    <p class="text-[14px] lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
+                        Don't miss this
+                        opportunity to upgrade your hockey bag with the best new hockey gear from Professional Hockey
+                        Club.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="hero">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                                class="max-1/2 rounded-lg shadow-2xl" />
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <!-- Get in Touch section -->
+
+        <section class="my-20">
+            <div>
+                <div class="text-center p-6 border-t border-b border-gray-400 border-dashed">
+                    <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Get In Touch
+                    </h2>
+                    <p class="text-[14px] lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
+                        If you are interested in finding a professional hockey club in Europe, you need to know how to
+                        get in touch with them.
+                    </p>
+                </div>
+
+                <div class="mt-12">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <!-- contact details part -->
+                        <div
+                            class="border border-[rgba(19,19,24,0.1)] p-6 lg:p-[50px] rounded-2xl flex flex-col lg:w-[474px] gap-6">
+                            <div
+                                class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(188,237,109,0.10)] px-8 pt-8 pb-12 rounded-2xl">
+                                <img class="max-w-12" src="Images/Group 1171275317.png" alt="">
+                                <p class="text-[rgba(19,19,24,0.40)] max-w-[309px] ">Phone Number :
+                                    <br><span class="text-[#131318] font-extrabold">(+62) 123-321-543</span>
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(253,221,95,0.10)] px-8 pt-8 pb-12 rounded-2xl">
+                                <img class="max-w-12" src="Images/Group 1171275318.png" alt="">
+                                <p class="text-[rgba(19,19,24,0.40)] max-w-[309px] ">Email :
+                                    <br><span class="text-[#131318] font-bold">hockeys@support.com</span>
+                                </p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(98,156,243,0.1)] px-8 pt-8 pb-12 rounded-2xl">
+                                <img class="max-w-12" src="Images/Group 1171275321.png" alt="">
+                                <p class="text-[rgba(19,19,24,0.40)] max-w-[309px] ">Location :
+                                    <br><span class="text-[#131318] font-bold">152/1 Mohakhali Wireless Gate</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- send massage part -->
+
+                        <div class="flex flex-col gap-6">
+                            <div class="flex flex-col lg:flex-row gap-6">
+                                <div class="flex flex-col gap-4">
+                                    <label class="text-[#131318] text-xl font-bold" for="name">Your Name</label>
+                                    <input
+                                        class="bg-[rgba(19,19,24,0.03)] pl-5 max-w-80 pr-20 py-5 rounded-xl text-[rgba(19,19,24,0.3)]"
+                                        type="text" placeholder="Enter your full name">
+                                </div>
+
+                                <div class="flex flex-col gap-4">
+                                    <label class="text-[#131318] text-xl font-bold" for="name">Your Email</label>
+                                    <input
+                                        class="bg-[rgba(19,19,24,0.03)] pl-5 max-w-80 pr-20 py-5 rounded-xl text-[rgba(19,19,24,0.3)]"
+                                        type="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col lg:flex-row gap-6">
+                                <div class="flex flex-col gap-4">
+                                    <label class="text-[#131318] text-xl font-bold" for="name">Subject</label>
+                                    <input
+                                        class="bg-[rgba(19,19,24,0.03)] pl-5 max-w-80 pr-20 py-5 rounded-xl text-[rgba(19,19,24,0.3)]"
+                                        type="text" placeholder="Enter your subject">
+                                </div>
+
+                                <div class="flex flex-col gap-4">
+                                    <label class="text-[#131318] text-xl font-bold" for="name">Phone Number</label>
+                                    <input
+                                        class="bg-[rgba(19,19,24,0.03)] pl-5 max-w-80 pr-20 py-5 rounded-xl text-[rgba(19,19,24,0.3)]"
+                                        type="email" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-4">
+                                <label class="text-[#131318] text-xl font-bold" for="name">Message</label>
+                                <textarea
+                                    class="bg-[rgba(19,19,24,0.03)] h-96 pl-5 py-5 rounded-xl text-[rgba(19,19,24,0.3)]"
+                                    type="text" placeholder="Write your message"></textarea>
+                            </div>
+                            <button class="mt-2 rounded-xl py-4 px-6 bg-[#FF4240] text-white text-xl font-bold">Send
+                                Message</button>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-[rgba(19,19,24,0.03)] py-9 rounded-xl flex flex-col gap-6">
+                        <h4 class="text-[#131318] text-2xl font-extrabold text-center">Social Media</h4>
+                        <div class="flex gap-8 justify-center text-2xl">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
     </main>
 
