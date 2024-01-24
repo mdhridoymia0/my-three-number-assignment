@@ -38,24 +38,23 @@
 
 <body class="font-manrope">
 
-    <!-- header section  -->
+    <!-- header section start  -->
+
     <header class="container my-24  mx-auto lg:max-w-[1200px]">
 
-        <nav class="border-t border-b border-dashed border-gray-400 py-5 mb-4">
-            <div class="navbar bg-base-100 p-0">
+        <nav class="border-y border-dashed border-gray-400 py-5 mb-4">
+            <div class="navbar bg-base-100 ">
 
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+
                         </div>
 
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -66,10 +65,9 @@
                     <a class="text-xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
                 </div>
 
-                <!-- large device -->
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                    <ul class="menu menu-horizontal px-1 text-bold">
+                        <li><a class="text-orange-500">Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
@@ -78,8 +76,7 @@
                 </div>
                 <div class="navbar-end flex gap-6">
                     <i class="fa-solid lg:block hidden fa-magnifying-glass"></i>
-                    <button
-                        class="px-[17px] py-[8px] lg:px-[24px] text-lg lg:text-xl lg:py-[15px] rounded-lg font-bold bg-[#FF4240] text-[#fff]">Get
+                    <button class="px-6 py-4 text-xl rounded-lg font-bold bg-[#FF4240] text-white">Get
                         Ticket</button>
                 </div>
             </div>
@@ -87,8 +84,8 @@
 
         <!-- banner section  -->
         <div>
-            <div class="carousel  w-full">
-                <div id="slide1" class="carousel-item relative w-full">
+            <div class="carousel  w-full lg:relative">
+                <div id="slide1" class="carousel-item  w-full">
                     <img src="./Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
@@ -103,18 +100,29 @@
                     </div>
                 </div>
             </div>
+
+            <div class=" bg-[#131318] mt-4 p-4 lg:p-8 rounded-2xl max-w-[500px] lg:absolute lg:right-48 lg:-mt-48">
+                <h3 class="text-2xl text-lg font-extrabold mb-4 text-white">Meet all the heroes from
+                    the field
+                </h3>
+                <p class="text-[rgba(255,255,255,0.60)] text-lg lg:text-base font-medium">"Discover the extraordinary talents of our field hockey heroes,
+                      showcasing skill, teamwork, and passion on the
+                    18-player roster. Unleash the spirit of the game!"</p>
+            </div>
         </div>
+
     </header>
 
     <main class="container mx-auto lg:max-w-[1200px]">
 
         <!-- Professional Hockeys Club  -->
         <section class=" text-center">
-            <div class="border-t border-b border-dashed py-5">
+            <div class="border-y border-gray-400 border-dashed py-5">
                 <h2 class="text-5xl font-extrabold pb-10">Professional Hockeys Club</h2>
-                <p class="text-gray-500">Dit amet consectetur. Condimentum dignissim
-                    adipiscing aliquam turpis placerat dolor. <br> Purus urna in
-                    sit nullam proin. </p>
+                <p class="text-gray-500">
+                    "Welcome to the home of champions! Join our Professional
+                     Hockey Club, where skill <br> meets passion, and excellence defines every play. Get ready for
+                     an exhilarating <br> journey with the best in the game!" </p>
             </div>
 
             <div class="pt-6 gap-8 grid grid-cols-1 lg:grid-cols-4">
@@ -134,7 +142,7 @@
                         <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Prayer Facility</h2>
+                        <h2 class="card-title">Experienced Coach</h2>
                         <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
                     </div>
                 </div>
@@ -144,7 +152,7 @@
                         <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Prayer Facility</h2>
+                        <h2 class="card-title">Senior Player</h2>
                         <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
                     </div>
                 </div>
@@ -154,7 +162,7 @@
                         <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%</div>
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Prayer Facility</h2>
+                        <h2 class="card-title">Training Ground</h2>
                         <p class="text-gray-500">Amet consectetur. Condimentum dignissim adipiscing .</p>
                     </div>
                 </div>
@@ -166,27 +174,24 @@
         <!-- Program Sections  -->
 
         <section class="my-24">
-            <div class="text-center py-6 px-[22px] border-t border-b border-dashed">
-                <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Program Sections
+            <div class="text-center py-6  border-y border-gray-400 border-dashed">
+                <h2 class="text-4xl mb-6 text-[#131318] font-extrabold">Program Sections
                 </h2>
-                <p class="text-[14px] lg:text-base lg:w-[607px] text-[rgba(19,19,24,0.60)] font-medium mx-auto"> A
-                    professional
-                    hockey club typically consists of several program sections, each with a specific function and
-                    responsibility.
+                <p class="text-4 lg:text-base text-[rgba(19,19,24,0.60)] font-medium mx-auto"> 
+                    "Experience elite hockey. Join our club program—where skill, camaraderie, and success converge. <br> Welcome to excellence!"
                 </p>
             </div>
 
+            <!-- image box  -->
             <div class="mt-6 lg:mt-12 flex flex-col gap-6">
-                <!-- card container -->
                 <div class="flex flex-col lg:flex-row gap-6">
 
-                    <!-- card one -->
+                    <!-- image card one -->
                     <div style="background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.50) 0%, rgba(19, 19, 24, 0.50) 100%),  url('./Images/2.png');"
-                        class="text-white bg-cover lg:bg-inherit max-w-[573px] rounded-2xl py-6 pl-6 pr-[34px] lg:pt-[95px] lg:pr-[38px] lg:pb-10 lg:pl-10">
+                        class="text-white bg-cover max-w-[573px] rounded-2xl py-6 pl-10 pr-9 lg:pt-24 lg:pb-10">
                         <h3 class="text-xl lg:text-[28px] font-extrabold mb-3 lg:mb-4">Junior Program</h3>
-                        <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">The program offers
-                            coaching, training, and mentoring from experienced and qualified staff, as well as
-                            exposure to competitive and challenging environments.
+                        <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">
+                            "Join our junior hockey team – fostering young talent, <br> teamwork, and passion on the ice. Unleash the  future champions within!"
                         </p>
                         <button class="btn bg-[#FF4240] border-0 text-white text-lg lg:text-xl font-bold">Register
                             Now!</button>
@@ -194,11 +199,10 @@
 
                     <!-- card two -->
                     <div style="background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.50) 0%, rgba(19, 19, 24, 0.50) 100%),  url('./Images/3.png');"
-                        class="text-white bg-cover lg:bg-inherit max-w-[573px] rounded-2xl py-6 pl-6 pr-[34px] lg:pt-[95px] lg:pr-[38px] lg:pb-10 lg:pl-10">
+                        class="text-white bg-cover lg:bg-inherit max-w-[573px] rounded-2xl py-6 pl-10 pr-[34px] lg:pt-24 lg:pr-9 lg:pb-10 ">
                         <h3 class="text-xl lg:text-[28px] font-extrabold mb-3 lg:mb-4">Teenager Program</h3>
-                        <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">Teenager Program is a
-                            program that aims to provide young hockey players with the
-                            opportunity to develop their skills and pursue their passion for the sport.
+                        <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">
+                            "Teenage hockey team, where passion meets skill. <br> Thriving on teamwork, we forge champions on and off the ice. Join us!"
                         </p>
                         <button class="btn bg-[#FF4240] border-0 text-white text-lg lg:text-xl font-bold">Register
                             Now!</button>
@@ -207,12 +211,10 @@
 
                 <!-- third card -->
                 <div style="background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.50) 0%, rgba(19, 19, 24, 0.50) 100%),  url('./Images/4.png');"
-                    class="text-white bg-cover lg:bg-inherit max-w-[1170px] rounded-2xl py-6 pl-6 pr-[34px] lg:pt-[95px] lg:pr-[38px] lg:pb-10 lg:pl-10">
+                    class="text-white bg-cover lg:bg-inherit  rounded-2xl py-6 pl-10 pr-9 pt-24  pb-10 ">
                     <h3 class="text-xl lg:text-[28px] font-extrabold mb-3 lg:mb-4">Professional Program</h3>
-                    <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">Professional Program is a
-                        new initiative that aims to provide high-quality
-                        training, coaching, and mentoring for aspiring hockey players who want to pursue a career in
-                        the sport.
+                    <p class="text-sm lg:text-base font-medium max-w-[495px] mb-5 lg:mb-6">
+                        "Elite professionals on ice, our hockey team embodies skill, <br> determination, and a relentless pursuit of victory. Join the excellence!"
                     </p>
                     <button class="btn bg-[#FF4240] border-0 text-white text-lg lg:text-xl font-bold">Register
                         Now!</button>
@@ -225,23 +227,24 @@
 
         <section class="my-24">
             <div>
-                <div class="text-center lg:p-8 py-6 px-[22px] border-t border-b border-dashed">
-                    <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Our New Products
+                <div class="text-center p-8 py-6 px-5 border-y border-gray-400 border-dashed">
+                    <h2 class="text-4xl mb-6 text-[#131318] font-extrabold">Our New Products
                     </h2>
-                    <p class="text-[14px] lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
-                        Don't miss this
-                        opportunity to upgrade your hockey bag with the best new hockey gear from Professional Hockey
-                        Club.
+                    <p class="text-4 lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
+                        
+                   "Welcome to Our New Products section! Explore innovation and quality in every 
+                    item. Elevate your experience with our latest additions."Don't miss this opportunity 
+                    to upgrade your hockey bag with the best new hockey gear from Professional Hockey Club.
                     </p>
                 </div>
 
 
-                <!-- products container -->
+                <!-- products box -->
                 <div class="flex flex-col gap-6 mt-12">
 
-                    <!-- first's row -->
+                <!-- row box 1st  -->
                     <div class="flex flex-col lg:flex-row gap-6">
-                        <!-- product one -->
+                        <!-- 1st card -->
                         <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
                             <div>
                                 <img class="w-[287px] lg:w-[180px]" src="Images/5.png" alt="">
@@ -263,10 +266,10 @@
                                 </div>
 
                                 <h4 class="my-3 text-[#131318] text-xl font-extrabold">World Cup Flags Football</h4>
-                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">It is played on a
-                                    rectangular ice rink, with two teams of six players each.</p>
+                                <p class="text-base lg:w-[306px] text-[rgba(19,19,24,0.60)] mb-4">
+                                 Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
 
-                                <div class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-5">
+                                <div class="flex flex-col lg:flex-row lg:items-center gap-5">
                                     <h5 class="text-[#FF4240] text-lg font-extrabold">Price - $22.00</h5>
                                     <div class="flex items-center gap-2">
                                         <i class="fa-solid fa-cart-shopping text-[rgba(137,137,139,1)]"></i>
@@ -276,7 +279,7 @@
                             </div>
                         </div>
 
-                        <!-- product two -->
+                        <!-- card two -->
                         <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
                             <div>
                                 <img class="w-[287px] lg:w-[180px]" src="Images/6.png" alt="">
@@ -312,9 +315,9 @@
                         </div>
                     </div>
 
-                    <!-- second's row -->
+                    <!-- row box 2nd -->
                     <div class="flex flex-col lg:flex-row gap-6">
-                        <!-- product third -->
+                        <!-- 1st card in 2nd row -->
                         <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
                             <div>
                                 <img class="w-[287px] lg:w-[180px]" src="Images/7.png" alt="">
@@ -349,7 +352,7 @@
                             </div>
                         </div>
 
-                        <!-- product four -->
+                        <!-- 2nd card in 2nd row-->
                         <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
                             <div>
                                 <img class="w-[287px] lg:w-[180px]" src="Images/8.png" alt="">
@@ -385,9 +388,9 @@
                         </div>
                     </div>
 
-                    <!-- third's row -->
+                    <!-- row box three -->
                     <div class="flex flex-col lg:flex-row gap-6">
-                        <!-- product five -->
+                        <!-- 1st card in 3rd row-->
                         <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
                             <div>
                                 <img class="w-[287px] lg:w-[180px]" src="Images/9.png" alt="">
@@ -422,7 +425,7 @@
                             </div>
                         </div>
 
-                        <!-- product six -->
+                        <!-- 2nd card 3rd row -->
                         <div class="flex flex-col lg:flex-row gap-6 lg:gap-5 p-6 border rounded-2xl max-w-[573px]">
                             <div>
                                 <img class="w-[287px] lg:w-[180px]" src="Images/10.png" alt="">
@@ -462,33 +465,89 @@
             </div>
         </section>
 
-        <!-- Clients Question  -->
-        <section class="my-20">
-            <div class="max-w-[1170px] mx-auto">
-                <div class="text-center lg:p-8 py-6 px-[22px] border-t border-b border-dashed">
-                    <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Our New Products
-                    </h2>
-                    <p class="text-[14px] lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
-                        Don't miss this
-                        opportunity to upgrade your hockey bag with the best new hockey gear from Professional Hockey
-                        Club.
+<!-- clind question section  -->
+        <section class="my-24">
+                <div class="text-center p-8 py-6 px-5 border-y border-gray-400 border-dashed">
+                    <h2 class="text-4xl mb-6 text-[#131318] font-extrabold">Clients Question</h2>
+                    <p class="text-4 lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
+                        "Explore insights in our Clients' Questions section. Answers to common queries for a
+                         seamless experience awaits you."
                     </p>
                 </div>
 
-                <div>
-                    <div class="hero">
-                        <div class="hero-content flex-col lg:flex-row">
-                            <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
-                                class="max-1/2 rounded-lg shadow-2xl" />
-                            <div>
+                <div class="p-8 flex flex-col lg:flex-row gap-10 border rounded-2xl mt-12">
+                    <img src="Images/11.png" alt="">
 
+                    <div class="w-full">
+                        <div class="collapse collapse-plus rounded-none border-b bg-white">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="px-0 collapse-title text-xl font-bold">
+                                Our Equipment
+                            </div>
+                            <div class="collapse-content">
+                                <p class="-ml-4 text-base max-w-[518px] text-[rgba(19,19,24,0.6)]">
+                            "Choose us for quality, reliability, and exceptional service. We prioritize your satisfaction and exceed expectations consistently."</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus rounded-none border-b bg-white">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="px-0 collapse-title text-xl font-bold">
+                                Hockey Training
+                            </div>
+                            <div class="collapse-content">
+                                <p class="-ml-4 text-base max-w-[518px] text-[rgba(19,19,24,0.6)]">
+                                "Choose us for quality, reliability, and exceptional service. We prioritize
+                                 your satisfaction and exceed expectations consistently."</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus rounded-none border-b bg-white">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="px-0 collapse-title text-xl font-bold">
+                                Private Lessons
+                            </div>
+                            <div class="collapse-content">
+                                <p class="-ml-4 text-base max-w-[518px] text-[rgba(19,19,24,0.6)]">
+                                "Choose us for quality, reliability, and exceptional service. We prioritize 
+                                your satisfaction and exceed expectations consistently."</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus rounded-none border-b bg-white">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="px-0 collapse-title text-xl font-bold">
+                                Ski Touring
+                            </div>
+                            <div class="collapse-content">
+                                <p class="-ml-4 text-base max-w-[518px] text-[rgba(19,19,24,0.6)]">
+                                "Choose us for quality, reliability, and exceptional
+                                 service. We prioritize your satisfaction and exceed
+                                  expectations consistently."</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus rounded-none border-b bg-white">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="px-0 collapse-title text-xl font-bold">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p class="-ml-4 text-base max-w-[518px] text-[rgba(19,19,24,0.6)]">
+                                "Choose us for quality, reliability, and exceptional service. We
+                                 prioritize your satisfaction and exceed expectations consistently."</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus rounded-none border-b bg-white">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="px-0 collapse-title text-xl font-bold">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p class="-ml-4 text-base max-w-[518px] text-[rgba(19,19,24,0.6)]">
+                                "Choose us for quality, reliability, and exceptional service. We prioritize your
+                                 satisfaction and exceed expectations consistently."</p>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
         </section>
+
 
         <!-- Get in Touch section -->
 
@@ -498,30 +557,30 @@
                     <h2 class="text-[22px] lg:text-4xl mb-4 lg:mb-6 text-[#131318] font-extrabold">Get In Touch
                     </h2>
                     <p class="text-[14px] lg:text-base lg:w-[607px] font-medium text-[rgba(19,19,24,0.60)] mx-auto">
-                        If you are interested in finding a professional hockey club in Europe, you need to know how to
-                        get in touch with them.
+                    "Send messages effortlessly and share your address seamlessly with our
+                     user-friendly communication and location services."
                     </p>
                 </div>
 
                 <div class="mt-12">
                     <div class="flex flex-col lg:flex-row gap-6">
                         <!-- contact details part -->
-                        <div
-                            class="border border-[rgba(19,19,24,0.1)] p-6 lg:p-[50px] rounded-2xl flex flex-col lg:w-[474px] gap-6">
-                            <div
-                                class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(188,237,109,0.10)] px-8 pt-8 pb-12 rounded-2xl">
+                        <div class="border border-gray-300 p-12 rounded-2xl flex flex-col lg:w-[474px] gap-6">
+
+                            <div class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(188,237,109,0.10)] px-8 pt-8 pb-12 rounded-2xl">
                                 <img class="max-w-12" src="Images/Group 1171275317.png" alt="">
                                 <p class="text-[rgba(19,19,24,0.40)] max-w-[309px] ">Phone Number :
                                     <br><span class="text-[#131318] font-extrabold">(+62) 123-321-543</span>
                                 </p>
                             </div>
-                            <div
-                                class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(253,221,95,0.10)] px-8 pt-8 pb-12 rounded-2xl">
+
+                            <div class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(253,221,95,0.10)] px-8 pt-8 pb-12 rounded-2xl">
                                 <img class="max-w-12" src="Images/Group 1171275318.png" alt="">
                                 <p class="text-[rgba(19,19,24,0.40)] max-w-[309px] ">Email :
                                     <br><span class="text-[#131318] font-bold">hockeys@support.com</span>
                                 </p>
                             </div>
+
                             <div
                                 class="flex flex-col gap-6 lg:w-[374px] bg-[rgba(98,156,243,0.1)] px-8 pt-8 pb-12 rounded-2xl">
                                 <img class="max-w-12" src="Images/Group 1171275321.png" alt="">
@@ -529,6 +588,7 @@
                                     <br><span class="text-[#131318] font-bold">152/1 Mohakhali Wireless Gate</span>
                                 </p>
                             </div>
+
                         </div>
 
                         <!-- send massage part -->
@@ -591,13 +651,67 @@
 
         </section>
 
-
     </main>
 
-    <footer>
+    <!-- footer  -->
+    <footer
+    class="footer p-10 lg:py-28 lg:px-[135px] text-center lg:text-left bg-[#131318] text-base text-[rgba(255,255,255,0.6)] grid grid-cols-1 lg:grid-cols-4">
 
+    <aside class="flex flex-col justify-center mx-auto">
+        <div class="flex flex-col gap-4">
+            <h3 class="text-[28px] font-extrabold text-white">Get In Touch</h3>
+            <p class="max-w-[346px]">"Send messages effortlessly and share your
+                 address seamlessly with our user-friendly communication and 
+                 location services."</p>
+        </div>
+        <div class="flex flex-col gap-[18px] mt-[21px] lg:mt-[25px] mx-auto lg:mx-0">
+            <div class="flex gap-4 items-center"><i class="fa-regular fa-envelope text-[rgba(255,66,64,1)]"></i>
+                <p class="font-medium">hockeys@support.com</p>
+            </div>
+            <div class="flex gap-4 items-center">
+                <i class="fa-solid fa-phone text-[rgba(255,66,64,1)]"></i>
+                <p class="font-medium">hockeys@support.com</p>
+            </div>
+        </div>
+    </aside>
 
-    </footer>
+    <div class=" flex col-span-2 gap-40 mx-auto">
+        <nav class="flex flex-col gap-[29px] mx-auto">
+            <header class="text-lg font-bold text-white mx-auto lg:mx-0">Company</header>
+            <div class="flex flex-col gap-4">
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </div>
+        </nav>
+
+        <nav class="flex flex-col gap-[29px] mx-auto">
+            <header class="text-lg font-bold text-white mx-auto lg:mx-0">Support</header>
+            <div class="flex flex-col gap-4">
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+            </div>
+        </nav>
+    </div>
+
+    <nav class="flex flex-col gap-7 lg:mt-0 mx-auto">
+        <header class="text-lg font-bold text-white mx-auto lg:mx-0">Services</header>
+        <div class="flex flex-col gap-4">
+            <a class="link link-hover">Academy</a>
+            <a class="link link-hover">Group Lesson</a>
+            <a class="link link-hover">Private Lesson</a>
+            <a class="link link-hover">Hockeys for kids</a>
+            <a class="link link-hover">Hockeys for Adult</a>
+        </div>
+    </nav>
+    </div>
+
+</footer>
+
 </body>
 
 </html>
